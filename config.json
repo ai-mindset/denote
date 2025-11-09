@@ -1,0 +1,55 @@
+{
+    "feeds": [
+        {
+            "id": "arxiv_ai",
+            "url": "http://export.arxiv.org/rss/cs.AI",
+            "type": "rss"
+        },
+        {
+            "id": "arxiv_cl",
+            "url": "http://export.arxiv.org/rss/cs.CL",
+            "type": "rss"
+        },
+        {
+            "id": "hacker_news",
+            "url": "https://news.ycombinator.com/rss",
+            "type": "rss"
+        },
+        {
+            "id": "answerai_blog",
+            "url": "https://www.answer.ai/index.xml",
+            "type": "rss"
+        }
+    ],
+    "topics": [
+        "ai",
+        "llm",
+        "machine learning",
+        "deep learning",
+        "large language models",
+        "neural networks",
+        "transformers",
+        "nlp",
+        "language models"
+    ],
+    "summaryLength": 150,
+    "maxItemsPerWeek": 10,
+    "output": {
+        "directory": "./output",
+        "filename": "weekly_summary.md"
+    },
+    "database": {
+        "path": "./denote.db"
+    },
+    "llm": {
+        "url": "http://localhost:11434/api/generate",
+        "model": "mistral",
+        "parameters": {
+            "max_tokens": 512,
+            "temperature": 0.7,
+            "top_p": 0.95,
+            "top_k": 40
+        }
+    }
+}
+
