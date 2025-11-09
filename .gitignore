@@ -1,5 +1,5 @@
-# Deno cache
-.deno/
+# Deno
+/.deno/
 deno.lock
 
 # Dependency directories
@@ -20,10 +20,28 @@ output/
 
 # OS specific files
 .DS_Store
+.DS_Store?
 Thumbs.db
 
 # Editor directories and files
-.idea/
-.vscode/
+/.idea/
+/.vs/
+/.vscode/
 *.swp
 *.swo
+*.orig
+
+# Coverage and test files
+/coverage/
+junit.xml
+
+# Jupyter files
+.ipynb_checkpoints/
+Untitled*.ipynb
+
+# Claude files
+**/.claude/settings.local.json
+
+# Flamegraphs
+flamebench*.svg
+flamegraph*.svg

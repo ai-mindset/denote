@@ -1,6 +1,6 @@
 # Denote - Weekly TL;DR Summariser
 
-A lightweight, self-hosted tool that fetches articles, papers, podcast and video transcripts from various sources, generates concise 150-word summaries using a local LLM, and delivers a ready-to-read markdown digest.
+A lightweight, self-hosted tool that fetches text from various sources, generates concise 150-word summaries using a local LLM, and delivers a ready-to-read markdown digest.
 
 ## Table of Contents
 
