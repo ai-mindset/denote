@@ -1,0 +1,92 @@
+{
+    "feeds": [
+        {
+            "id": "biorxiv_ai",
+            "url": "https://connect.biorxiv.org/relate/feed/181",
+            "type": "rss"
+        },
+        {
+            "id": "biorxiv_bioinformatics",
+            "url": "https://connect.biorxiv.org/relate/feed/78",
+            "type": "rss"
+        },
+        {
+            "id": "arxiv_ai",
+            "url": "https://export.arxiv.org/rss/cs.AI",
+            "type": "rss"
+        },
+        {
+            "id": "arxiv_ml",
+            "url": "https://export.arxiv.org/rss/cs.LG",
+            "type": "rss"
+        },
+        {
+            "id": "arxiv_comp_bio",
+            "url": "https://export.arxiv.org/rss/q-bio.QM",
+            "type": "rss"
+        },
+        {
+            "id": "huggingface_blog",
+            "url": "https://huggingface.co/blog/feed.xml",
+            "type": "rss"
+        },
+        {
+            "id": "twitter_jeremy_howard",
+            "url": "https://rss.xcancel.com/jeremyphoward/rss",
+            "type": "rss"
+        },
+        {
+            "id": "twitter_andrej_karpathy",
+            "url": "https://rss.xcancel.com/karpathy/rss",
+            "type": "rss"
+        },
+        {
+            "id": "twitter_lex_fridman",
+            "url": "https://rss.xcancel.com/lexfridman/rss",
+            "type": "rss"
+        }
+    ],
+    "topics": [
+        "ai",
+        "llm",
+        "machine learning",
+        "deep learning",
+        "large language models",
+        "neural networks",
+        "transformers",
+        "nlp",
+        "language models",
+        "drug discovery",
+        "in-silico",
+        "molecular modeling",
+        "protein folding",
+        "alphafold",
+        "molecule generation",
+        "computational chemistry",
+        "bioinformatics",
+        "structural biology",
+        "generative models",
+        "diffusion models",
+        "reinforcement learning",
+        "biomedical"
+    ],
+    "summaryLength": 150,
+    "maxItemsPerWeek": 15,
+    "output": {
+        "directory": "./output",
+        "filename": "ai_drug_discovery_digest.md"
+    },
+    "database": {
+        "path": "./denote.db"
+    },
+    "llm": {
+        "url": "http://localhost:11434/api/generate",
+        "model": "mistral",
+        "parameters": {
+            "max_tokens": 512,
+            "temperature": 0.7,
+            "top_p": 0.95,
+            "top_k": 40
+        }
+    }
+}
